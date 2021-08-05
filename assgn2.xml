@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!DOCTYPE article [
+
+<!ELEMENT article (class,title, subtitle, author,header, body,issue)>
+	<!ELEMENT class (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT subtitle (#PCDATA)>
+	<!ELEMENT author (name,handle)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT handle (#PCDATA)>
+	<!ELEMENT header (image,headerdisc, credit)>
+		<!ELEMENT image EMPTY>
+		<!ELEMENT headerdisc (#PCDATA)>
+		<!ELEMENT credit (#PCDATA)>
+	<!ELEMENT body ((topic+, subtext)+)>
+		<!ELEMENT topic (#PCDATA)>
+		<!ELEMENT subtext ((paragraph|statistics)*)>
+			<!ELEMENT paragraph (#PCDATA)>
+			<!ELEMENT statistics (figure, description, source)>
+				<!ELEMENT figure (#PCDATA)>
+				<!ELEMENT description (#PCDATA)>
+				<!ELEMENT source (#PCDATA)>
+	<!ELEMENT issue (#PCDATA)>
+
+<!ATTLIST article src CDATA #REQUIRED>
+<!ATTLIST article cname CDATA #REQUIRED>
+<!ATTLIST author role (STAFFWRITER|JOURNALIST|CORRESPONDENT) #IMPLIED>
+<!ATTLIST image src CDATA #REQUIRED>
+<!ATTLIST handle handle (Twitter|Instagram|Facebook) #IMPLIED>
+]>
+
+<article src="https://www.inc.com/magazine/201902/kevin-j-ryan/north-carolina-raleigh-research-triangle-2018-surge-cities.html" cname="Inc. Magazine">
+	<class> Surge Cities </class>
+	<title> North Carolina Startups Raised More Than $1 Billion Last Year.Here's Why Raleigh Is the Tech Industry's Best Kept Secret
+	</title>
+
+	<subtitle> 
+	North Carolina is home to a bustling epicenter for tech startups, brainy talent, and killer barbecue.
+	</subtitle>
+
+	<author role="STAFFWRITER"> 
+	<name> BY KEVIN J. RYAN </name>
+	<handle handle="Twitter"> @WHERESKR </handle>
+	</author>
+
+	<header>
+
+	<image src="image.jpg"/>
+
+	<headerdisc>
+	(From left) RewardStock founder Jon Hayes; Fullsteam Brewery Humidity Pale Ale; PrecisionHawk drone; architect Ginger Dosier; entrepreneur David Gardner; investor Jan Davis; Bee Downtown founder Leigh-Kathryn Bonner; Duke University flag; and Spiffy CEO Scot Wingo.
+	</headerdisc>
+
+	<credit>
+	Courtesy RewardStock; courtesy Fullsteam Brewery; courtesy PrecisionHawk; Michael Dosier; courtesy David Gardner; courtesy Jan Davis; Travis Bordley; courtesy Duke University; courtesy Scot Wingo
+	</credit>
+
+	</header>
+	<body> 
+		<topic> Startup Neighborhoods</topic>
+		<subtext>
+			<paragraph>
+				Most residents never thought they'd see the day, but downtown Durham is now a cultural and entrepreneurial hotbed. American Tobacco Campus, once a crime-ridden stretch of abandoned cigarette factories, is now a sprawling expanse of outdoor cafés, green space, and startup offices. Sports-scheduling app maker Teamworks is around the corner from the massive American Underground co-working space, which houses 232 companies across three downtown locations, including fintech startup LoanWell.
+			</paragraph>
+			<paragraph>
+				Raleigh's Warehouse District, another recently revitalized precinct, is home to Videri Chocolate Factory, as well as HQ Raleigh's 20,000-square-foot flagship co-working space. Lunchgoers hit the original Happy + Hale for ahi poke bowls and cold-pressed juices.
+			</paragraph>
+			<statistics>
+				<figure>$96,173</figure>
+				<description>Average salary of a software engineer here --17 percent below the national average.</description>
+				<source>Source: Glassdoor</source>
+			</statistics>
+
+			<statistics>
+				<figure>$1.1 billion</figure>
+				<description>Funding raised by North Carolina startups in 2017, up 36 percent from the previous year.</description>
+				<source>Source: Council for Entrepreneurial Development</source>
+			</statistics>
+			
+			<statistics>
+				<figure>$25.23</figure>
+				<description>The average annual asking office rent per square foot.</description>
+				<source>Source: JLL's Q2 2018 Office Insight report on the Raleigh-Durham market</source>
+			</statistics>
+
+			<statistics>
+				<figure>47 percent</figure>
+				<description>Portion of the local talent pool with a bachelor's or higher degree.
+</description>
+				<source>Source: JLL's Q2 2018 Office Insight report on the Raleigh-Durham market
+</source>
+			</statistics>
+			<paragraph>
+				The Downtown Chapel Hill area, located at the northwest corner of the UNC campus, is home to a Google outpost and a handful of co-working spaces.
+			</paragraph>
+			
+			
+		</subtext>
+
+		<topic> Who to Know </topic>
+		<subtext>
+			<paragraph>
+				Serial entrepreneur David Gardner takes inexperienced entrepreneurs under his wing. The NC State alum founded Cofounders Capital and operates a free co-working space in the nearby suburb of Cary. If he's impressed by you and your startup, he'll invest. "He's one of the few people I've encountered in this area who really understand the earliest-stage investment opportunities," says Jon Hayes,whose company RewardStock got $500,000 in seed investments from Gardner.
+			</paragraph>
+		
+			<paragraph>
+				Scot Wingo is CEO of on-demand car-wash company Spiffy; he's also a well-connected entrepreneur with three successful exits, including the 2013 IPO for e-commerce platform ChannelAdvisor. Wingo publishes the annual Triangle Tweener list, which tracks local companies with revenue between $1 million and $80 million, to highlight the area's thriving startup scene. "He's one of the more passionate people about our region," says Jason Caplain, co-founder of Bull City Venture Partners. "Everybody in the startup world here knows of him or has met him."
+			</paragraph>
+			<paragraph>
+				There's no better example of Southern charm than Jan Davis, an investor at Triangle Angel Partners and entrepreneur-in-residence at UNC's entrepreneurship program. Formerly the CEO of retail ana­lytics firm ShopperTrak, she's now on the boards of Triangle-based Stealz and SEAL SwimSafe. Her advice often comes free of charge. "She's a great connector and totally altruistic," says David Gardner.
+			</paragraph>
+		</subtext>
+		<topic> Red Flags </topic>
+		<subtext>
+			<paragraph>
+				Founders complain that early-stage investments are hard to come by; venture capitalists generally prefer to wait until your company has established lines of revenue. "There's more risk aversion here," says Jason Massey, former VC and now CEO of Raleigh-based Ndustrial.io. "It's a little bit of commercial bankers playing VCs, and they do deep, multi-month due diligence that would be one day's work in San Francisco."
+			</paragraph>
+			<paragraph>
+				Local companies fear that engineer salaries and housing costs could spike if major tech players end up building headquarters here. (Apple, for example, was reportedly considering a $2 billion development in the Triangle before it announced on December 13 that it would build a campus in Austin.)			</paragraph>
+		</subtext>
+
+		<topic> Recently Funded Startups </topic>
+		<subtext>
+			<paragraph>
+				$75 million PrecisionHawk (drones)
+			</paragraph>
+			<paragraph>
+				$50 million Pendo (business website analytics)
+			</paragraph>
+			<paragraph>
+				$15 million Teamworks (sports team scheduling software)
+			</paragraph>
+				
+		</subtext>
+
+		<topic> Recent Exits</topic>
+		<subtext>
+			<paragraph>
+				$200 million Marketing tech company Bronto, to NetSuite (2015)
+			</paragraph>
+			<paragraph>
+				$80 million Communication platform Bandwidth, initial public offering (2017)
+			</paragraph>
+			<paragraph>
+				$79 million Pharmaceutical company Dova, initial public offering (2017)
+			</paragraph>
+		</subtext>
+
+		<topic> Talent Pipeline </topic>
+		<subtext>
+			<paragraph>
+				The home to Duke, the University of North Carolina at Chapel Hill, and NC State offers a hyper-educated workforce (ahead of San Francisco, according to NerdWallet). All three schools have well-regarded entrepreneurship programs, as well as angel funds through which alumni can invest in current students' ventures. The area's startups are software-heavy, thanks in part to the schools' strong engineering and computer science studies, but there are plenty of exceptions, like beekeeping startup Bee Downtown, which Leigh- Kathryn Bonner founded while at NC State.
+			</paragraph>
+			<paragraph>
+				UNC-backed Launch Chapel Hill offers a 22-week accelerator program that accepts eight to 12 startups. Graduates include Seal the Seasons, which freezes and distributes farmers' crops.
+			</paragraph>
+		</subtext>
+
+		<topic> Companies to Watch </topic>
+		<subtext>
+			<paragraph>
+				Architect Ginger Dosier created an ecofriendly way to make masonry: Grow it from bacteria. It's similar to the process that creates coral, except millions of times faster. Her startup, BioMason, has a partnership with a manufacturer to make lab-grown tiles, and it's working on similar deals for brickmaking.
+			</paragraph>
+			<paragraph>
+				With $106 million in funding and a rapidly growing staff, Pendo is widely considered one of the hottest startups in the Triangle. Founded by Todd Olson, Erik Troan, Rahul Jain, and Eric Boduch, the company makes business software that helps instruct companies' website or app design by tracking how customers behave.
+			</paragraph>
+
+		</subtext>
+
+		<topic> Where to Talk Shop </topic>
+		<subtext>
+			<paragraph>
+				Durham has become a food destination and Fullsteam Brewery dubs itself "Durham's Welcome Center." Many deals have been secured over the spot's far-out experimental beers, which include a sweet-potato lager and a Gatorade-inspired lemon-lime gose.
+			</paragraph>
+			<paragraph>
+				Massive Chapel Hill brewery, distillery, restaurant, and event space Top of the Hill is the work of Scott Maitland, an adjunct professor of entrepreneurship at UNC, which helps explain why so many founders can be spotted on its scenic patio.
+			</paragraph>
+			<paragraph>
+				Business casual--with a bib--is a common getup at the Pit, a barbecue joint in Raleigh that gets down and dirty with North Carolina-style 'cue.
+			</paragraph>
+		</subtext>
+			
+
+
+	</body>
+
+	<issue>	FROM THE WINTER 2018/2019 ISSUE OF INC. MAGAZINE </issue>
+
+
+
+</article>
